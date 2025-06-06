@@ -1,0 +1,73 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+//   {
+//     date: "2025",
+//     title: "Bounsic – Proyecto Académico",
+//     company: "Universidad Pontificia Bolivariana",
+//     description:
+//       "Desarrollo de una plataforma web de reproducción musical alojada en la nube (Azure), con algoritmos de recomendación basados en scraping, crawling, transformada de Fourie",
+//     link: "https://www.youtube.com/watch?v=EWtBTfPVWO8&ab_channel=JuanDavidPati%C3%B1oParra",
+//   },
+  {
+    date: "Junio 2024 - Diciembre 2024",
+    title: "Desarrollador de Software (Temporal)",
+    company: "Curaduría Urbana #1 de Bucaramanga",
+    description:
+      "Participé en el desarrollo y mantenimiento del sistema interno, implementando funcionalidades CRUD y optimizando procesos clave. Mejoré componentes visuales y la experiencia de usuario como parte de una colaboración técnica para modernizar las herramientas digitales de la entidad.",
+    link: "https://www.curaduria1bucaramanga.com/",
+  },
+  {
+    date: "Julio 2022 - Diciembre 2026",
+    title: "Estudiante de Ingeniería de Software",
+    company: "Universidad Pontificia Bolivariana",
+    description:
+      "Estudiante de Ingeniería de Software en la Universidad Pontificia Bolivariana, seccional Bucaramanga, enfocado en el desarrollo de soluciones tecnológicas, desde aplicaciones web hasta sistemas integrados. Formación centrada en programación, arquitectura de software, bases de datos y metodologías ágiles.",
+    link: "https://github.com/ChisCurubo",
+  },
+
+//   {
+//     date: "2023",
+//     title: "Vitamed IPS – Proyecto Web",
+//     company: "Universidad Pontificia Bolivariana",
+//     description:
+//       "Sistema web con funcionalidades CRUD, gestión de citas y control de roles, simulando un ERP/CRM. Proyecto académico de Proyecto Integrador I.",
+//     link: "https://github.com/Jerdirlson/ProyectoIntegrador.git",
+//   },
+//   {
+//     date: "2023",
+//     title: "IPS Salud Pro Proyecto Web",
+//     company: "Universidad Pontificia Bolivariana",
+//     description:
+//       "Sistema web con funcionalidades CRUD, gestión de citas y control de roles, simulando un ERP/CRM. Proyecto académico de Ingeniería de Software.",
+//     link: "https://github.com/Jerdirlson/Ing-Software-front.git",
+//   },
+//   {
+//     date: "2023",
+//     title: "Sistema de Análisis de Tráfico",
+//     company: "Universidad Pontificia Bolivariana",
+//     description:
+//       "Simulación de tráfico vehicular utilizando SUMO y análisis de datos. Presentado en el Foro FIME II como parte de la asignatura Ecuaciones Diferenciales.",
+//     link: "https://github.com/ChisCurubo/EcuacionesTrafico.git",
+//   },
+//   {
+//     date: "2022",
+//     title: "Whack a Frog (Juego)",
+//     company: "Universidad Pontificia Bolivariana",
+//     description:
+//       "Creación de un juego inspirado en Whack-a-Mole como parte del curso de Paradigmas de Programación. Implementado en Java.",
+//     link: "https://github.com/namekulero/WhackAFrog.git",
+//   },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li>
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
