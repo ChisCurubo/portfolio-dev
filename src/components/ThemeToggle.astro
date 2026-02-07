@@ -1,9 +1,18 @@
 ---
-import SunIcon from "./icons/Sun.astro"
-import MoonIcon from "./icons/Moon.astro"
-import SystemIcon from "./icons/System.astro"
+import SunIcon from "./icons/Sun.astro";
+import MoonIcon from "./icons/Moon.astro";
+import SystemIcon from "./icons/System.astro";
+import es from "../json/locales/es.json";
+import en from "../json/locales/en.json";
 
-const THEMES = ["Light", "Dark", "System"]
+interface Props {
+  lang?: "es" | "en";
+}
+
+const { lang = "es" } = Astro.props;
+const locale = lang === "en" ? en : es;
+const THEMES = locale.themeToggle.themes;
+const chooseThemeLabel = locale.themeToggle.chooseThemeLabel;
 ---
 
 <div class="relative ml-1 mr-1">
@@ -12,7 +21,7 @@ const THEMES = ["Light", "Dark", "System"]
     id="theme-toggle-btn"
     class="appearance-none border-none flex hover:scale-125 transition"
   >
-    <span class="sr-only">Elige el tema</span>
+    <span class="sr-only">{chooseThemeLabel}</span>
     <SunIcon id="light" class="theme-toggle-icon size-5 transition-all" />
     <MoonIcon
       id="dark"

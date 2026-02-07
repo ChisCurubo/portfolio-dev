@@ -1,94 +1,18 @@
 ---
-import Welcome from "../components/Welcome.astro";
-import Layout from "../layouts/Layout.astro";
-import Badge from "../components/Badge.astro";
-import Github from "../components/icons/GitHub.astro";
-import LinkedIn from "../components/icons/LinkedIn.astro";
-import SocialPill from "../components/SocialPill.astro";
-import MailIcon from "../components/icons/Mail.astro";
-import Experience from "../components/Experience.astro";
-import SectionContainer from "../components/SectionContainer.astro";
-import TitleSection from "../components/TitleSection.astro";
-import Briefcase from "../components/icons/Briefcase.astro";
-import CodeIcon from "../components/icons/Code.astro";
-import Projects from "../components/Projects.astro";
-import ProfileCheck from "../components/icons/ProfileCheck.astro";
-import AboutMe from "../components/AboutMe.astro";
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+// Redirigir al idioma. Las rutas con idioma son /es y /en.
+const base = import.meta.env.BASE_URL?.replace(/\/$/, "") || "";
+const redirectUrl = `${base}/es`;
 ---
 
-<Layout
-  title="Welcome to Christian's Portfolio"
-  description="Soy un desarrollador full stack con dominio de tecnologías clave como Python, Java, TypeScript, SQL y NoSQL, capaz de construir soluciones robustas desde la infraestructura hasta la interfaz. Manejo frameworks modernos como Angular, Vue y React con Tailwind, lo que me permite crear experiencias web ágiles y visualmente atractivas. Estoy listo para aportar no solo código, sino valor real, escalabilidad y eficiencia a cualquier equipo tecnológico."
->
-  <main class="px-4">
-    <SectionContainer class="py-44">
-      <div class="flex gap-4 mb-4">
-        <img
-          class="rounded-full h-16 w-16 mb-4"
-          src="/portfolio-dev/ImagenChris.jpg"
-          alt="Mi foto"
-        />
-
-        <a
-          href="https://www.linkedin.com/in/christian-rodriguez-75501a2a6/"
-          target="_blank"
-          rel="noopener"
-          class="flex items-center transition md:justify-center md:hover:scale-105"
-        >
-          <Badge>Disponible para trabajar</Badge>
-        </a>
-      </div>
-
-      <h1
-        class="text-white text-3xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
-      >
-        Hey, soy Christian
-      </h1>
-      <h2 class="lg:text-xl opacity-80 text-wrap max-w-[800px] text-white">
-        +2 años de experiencia desarrollando soluciones digitales. <span
-          class="text-yellow-400/60 opacity-80">De Bucaramanga, Colombia.</span
-        > Me apasiona crear productos útiles, con buen diseño y que realmente aporten
-        valor. Disfruto aprender constantemente y trabajar en proyectos desafiantes.
-      </h2>
-      <nav class="flex flex-wrap gap-4 mt-8">
-        <SocialPill href="mailto:cmrcurubo@gmail.com">
-          <MailIcon class="size-4" />
-          cmrcurubo@gmail.com
-        </SocialPill>
-        <SocialPill href="https://linkedin.com/in/midudev">
-          <LinkedIn class="size-4" />
-          LinkedIn
-        </SocialPill>
-        <SocialPill href="https://github.com/ChisCurubo">
-          <Github class="size-4" />
-          GitHub
-        </SocialPill>
-      </nav>
-    </SectionContainer>
-    <SectionContainer id="exp">
-      <TitleSection>
-        <Briefcase class="size-8" />
-        Experiencia laboral
-      </TitleSection>
-      <Experience />
-    </SectionContainer>
-
-    <SectionContainer class="py-24" id="projects">
-      <TitleSection>
-        <CodeIcon class="size-8" />
-        Projects
-      </TitleSection>
-      <Projects />
-    </SectionContainer>
-
-    <SectionContainer class="py-24" id="about">
-      <TitleSection>
-        <ProfileCheck class="size-8" />
-        Sobre mí
-      </TitleSection>
-      <AboutMe />
-    </SectionContainer>
-  </main>
-</Layout>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content={`0;url=${redirectUrl}`} />
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href={redirectUrl}>portfolio</a>...</p>
+  </body>
+</html>

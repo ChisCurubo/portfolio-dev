@@ -1,45 +1,52 @@
 ---
-const navItems = [
-  {
-    title: "Experiencia",
-    label: "experiencia",
-    url: "/portfolio-dev/#exp",
-  },
-  {
-    title: "Proyectos",
-    label: "proyectos",
-    url: "/portfolio-dev/#projects",
-  },
-  {
-    title: "Sobre mí",
-    label: "sobre-mi",
-    url: "/portfolio-dev/#about",
-  },
-  {
-    title: "Contacto",
-    label: "contacto",
-    url: "mailto:cmrcurubo@gmail.com",
-  },
-]
+import es from "../json/locales/es.json";
+import en from "../json/locales/en.json";
+
+interface Props {
+  lang: "es" | "en";
+  basePath: string;
+}
+
+const { lang, basePath } = Astro.props;
+const locale = lang === "en" ? en : es;
+const navItems = locale.header.navItems;
+const baseWithoutLang = basePath.replace(/\/[^/]+$/, "") || import.meta.env.BASE_URL?.replace(/\/$/, "") || "";
+const hrefEs = `${baseWithoutLang}/es`;
+const hrefEn = `${baseWithoutLang}/en`;
 ---
 
 <header
   class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2"
 >
   <nav
-    class="flex px-3 text-sm font-medium rounded-full text-white-600 dark:text-white-200 justify-center items-center"
+    class="flex px-3 text-sm font-medium rounded-full text-white-600 dark:text-white-200 justify-center items-center gap-1"
   >
     {
       navItems.map((link) => (
         <a
           class="relative block px-2 py-2 transition hover:text-yellow-500 dark:hover:text-yellow-500"
           aria-label={link.label}
-          href={link.url}
+          href={"url" in link ? link.url : ("urlHash" in link ? link.urlHash : "")}
         >
           {link.title}
         </a>
       ))
     }
+    <span class="mx-1 text-white-600/60 dark:text-white/60" aria-hidden="true">|</span>
+    <a
+      href={hrefEs}
+      class={`px-2 py-2 transition rounded hover:text-yellow-500 dark:hover:text-yellow-500 ${lang === "es" ? "text-yellow-500 font-semibold" : ""}`}
+      aria-label="Español"
+    >
+      ES
+    </a>
+    <a
+      href={hrefEn}
+      class={`px-2 py-2 transition rounded hover:text-yellow-500 dark:hover:text-yellow-500 ${lang === "en" ? "text-yellow-500 font-semibold" : ""}`}
+      aria-label="English"
+    >
+      EN
+    </a>
   </nav>
 </header>
 

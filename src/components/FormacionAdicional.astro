@@ -1,0 +1,71 @@
+---
+import es from "../json/locales/es.json";
+import en from "../json/locales/en.json";
+
+interface Props {
+  lang?: "es" | "en";
+}
+
+const { lang = "es" } = Astro.props;
+const locale = lang === "en" ? en : es;
+const items = locale.formacionAdicional.items;
+
+import Nvidia from "./icons/Nvidia.astro";
+import GCP from "./icons/GCP.astro";
+import Santander from "./icons/Santander.astro";
+import LVMH from "./icons/LVMH.astro";
+
+const PROVIDERS = {
+  Nvidia: {
+    icon: Nvidia,
+    color: "text-[#76B900]"
+  },
+  "Google Cloud Skills Boost": {
+    icon: GCP,
+    color: "text-[#4285F4]"
+  },
+  "Santander Open Academy": {
+    icon: Santander,
+    color: "text-[#EC0000]"
+  },
+  LVMH: {
+    icon: LVMH,
+    color: "text-black dark:text-white"
+  }
+};
+
+---
+
+<ul class="relative mt-8 space-y-5">
+  {
+    items.map((item) => {
+      const provider = PROVIDERS[item.provider];
+      const Icon = provider?.icon;
+
+      return (
+        <li class="flex items-start gap-4 p-4 rounded-xl bg-gray-800/40 hover:bg-gray-800/70 transition">
+          
+          {Icon && (
+            <span class={`p-2 rounded-lg bg-white/5 ${provider.color}`}>
+              <Icon class="w-6 h-6" />
+            </span>
+          )}
+
+          <div class="flex flex-col gap-1">
+            <span class="font-semibold text-white">
+              {item.provider}
+            </span>
+
+            {item.description && (
+              <span class="text-sm text-gray-400 text-pretty">
+                {item.description}
+              </span>
+            )}
+          </div>
+
+        </li>
+      );
+    })
+  }
+</ul>
+

@@ -4,15 +4,22 @@ import "@fontsource-variable/onest";
 import "../styles/global.css";
 import Footer from "../components/Footer.astro";
 
-const { title } = Astro.props.title;
-const { description } = Astro.props.description;
+interface Props {
+  lang?: "es" | "en";
+  title: string;
+  description: string;
+  basePath?: string;
+}
+
+const { lang = "es", title, description, basePath = "" } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/portfolio-dev/ImagenChris.jpg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
@@ -24,9 +31,9 @@ const { description } = Astro.props.description;
       >
       </div>
     </div>
-    <Header />
+    <Header lang={lang} basePath={basePath} />
     <slot />
-    <Footer />
+    <Footer lang={lang} basePath={basePath} />
     <style is:global>
       :root {
         color-scheme: light dark;

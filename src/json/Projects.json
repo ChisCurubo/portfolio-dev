@@ -1,0 +1,49 @@
+{
+  "imageAlt": "No Image",
+  "buttons": {
+    "code": "Code",
+    "preview": "Preview"
+  },
+  "projects": [
+    {
+      "title": "Bounsic – Plataforma de Reproducción Musical",
+      "description": "Desarrollo de una plataforma web de reproducción musical alojada en Azure, con algoritmos de recomendación basados en scraping, crawling, transformada de Fourier y BERT. Proyecto académico.",
+      "link": "https://www.youtube.com/watch?v=EWtBTfPVWO8&ab_channel=JuanDavidPati%C3%B1oParra",
+      "github": "https://github.com/Bounsic-A-S/Bounsic-dev.git",
+      "image": "/portfolio-dev/BounsicImg.png",
+      "tags": ["TAILWIND", "TYPESCRIPT", "ADOBE_XD", "ADOBE_ILLUSTRATOR", "ANGULAR", "MONGODB", "AZURE", "SQL", "PYTHON"]
+    },
+    {
+      "title": "Vitamed IPS – Sistema Web",
+      "description": "Sistema web con funcionalidades CRUD, gestión de citas y control de roles, simulando un ERP/CRM. Proyecto académico para Proyecto Integrador I.",
+      "link": "https://www.canva.com/design/DAGUSzaKFd8/CJ2J17d_-8LieQOtio39vg/edit?utm_content=DAGUSzaKFd8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "github": "https://github.com/Jerdirlson/ProyectoIntegrador.git",
+      "image": "/portfolio-dev/Vitamed.png",
+      "tags": ["TAILWIND", "TYPESCRIPT", "JAVASCRIPT", "SQL", "ADOBE_XD", "ADOBE_ILLUSTRATOR", "VUE", "NODE"]
+    },
+    {
+      "title": "IPS Salud Pro – Sistema Web",
+      "description": "Sistema web con gestión de citas médicas, CRUD de usuarios y roles. Proyecto académico desarrollado en la materia de Ingeniería de Software.",
+      "link": "https://docs.google.com/presentation/d/1L4GeRIHJiAfsdmEDDHyTF7j3wewv0-IMueEPpY68Hj4/edit?usp=sharing",
+      "github": "https://github.com/Jerdirlson/Ing-Software-front.git",
+      "image": "/portfolio-dev/SlaudPro.png",
+      "tags": ["TAILWIND", "TYPESCRIPT", "SQL", "ADOBE_XD", "ADOBE_ILLUSTRATOR", "VUE", "NODE"]
+    },
+    {
+      "title": "Sistema de Análisis de Tráfico",
+      "description": "Simulación de tráfico vehicular utilizando SUMO y análisis de datos obtenidos. Presentado en el Foro FIME II en la asignatura de Ecuaciones Diferenciales.",
+      "link": "https://docs.google.com/presentation/d/1BGKNRbCUoPnNF7WizA7ibyJBCz97IirET-reAt8wDQU/edit?usp=sharing",
+      "github": "https://github.com/ChisCurubo/EcuacionesTrafico.git",
+      "image": "/portfolio-dev/Fime.png",
+      "tags": ["JAVA", "PYTHON", "SUMO"]
+    },
+    {
+      "title": "Whack a Frog (Juego)",
+      "description": "Juego inspirado en Whack-a-Mole, desarrollado como parte de la materia Paradigmas de Programación. Implementado en Java con interfaz gráfica.",
+      "link": "https://docs.google.com/presentation/d/13xcyXtIwsuh2b1JakjcCIQ11EVqiHziz/edit?usp=sharing&ouid=116899723769016775702&rtpof=true&sd=true",
+      "github": "https://github.com/namekulero/WhackAFrog.git",
+      "image": "/portfolio-dev/WHACK.png",
+      "tags": ["JAVA", "ADOBE_ILLUSTRATOR"]
+    }
+  ]
+}

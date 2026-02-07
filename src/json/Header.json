@@ -1,0 +1,24 @@
+{
+  "navItems": [
+    {
+      "title": "Experiencia",
+      "label": "experiencia",
+      "url": "/portfolio-dev/#exp"
+    },
+    {
+      "title": "Proyectos",
+      "label": "proyectos",
+      "url": "/portfolio-dev/#projects"
+    },
+    {
+      "title": "Sobre mí",
+      "label": "sobre-mi",
+      "url": "/portfolio-dev/#about"
+    },
+    {
+      "title": "Contacto",
+      "label": "contacto",
+      "url": "mailto:cmrcurubo@gmail.com"
+    }
+  ]
+}

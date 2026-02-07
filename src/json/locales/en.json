@@ -1,0 +1,145 @@
+{
+  "lang": "en",
+  "home": {
+    "title": "Christian Mauricio Rodríguez Curubo – Portfolio",
+    "description": "Systems and Computer Engineering student with solid skills in software development, web and mobile applications. Junior Software Developer interested in contributing in programming, frontend and backend, data analytics, quantum computing and systems analysis. Fast learner, good communication and teamwork.",
+    "photoAlt": "Christian Mauricio Rodríguez Curubo",
+    "badge": "Available for work",
+    "greeting": "Hey, I'm Christian",
+    "subtitle": "Junior Software Developer · Systems and Computer Engineering.",
+    "subtitleLocation": "Bucaramanga, Santander.",
+    "subtitleRest": " I'm passionate about designing, implementing and optimizing technology solutions in dynamic and collaborative environments.",
+    "sectionExperience": "Experience and education",
+    "sectionProjects": "Projects",
+    "sectionAbout": "About me",
+    "sectionFormacion": "Additional training",
+    "phone": "3015253675",
+    "phoneLabel": "Tel"
+  },
+  "header": {
+    "navItems": [
+      { "title": "Experience", "label": "experiencia", "urlHash": "#exp" },
+      { "title": "Projects", "label": "proyectos", "urlHash": "#projects" },
+      { "title": "About me", "label": "sobre-mi", "urlHash": "#about" },
+      { "title": "Training", "label": "formacion", "urlHash": "#formacion" },
+      { "title": "Contact", "label": "contacto", "url": "mailto:cmrcurubo@gmail.com" }
+    ]
+  },
+  "footer": {
+    "copyrightPrefix": "©",
+    "copyrightSuffix": "All rights reserved",
+    "midudevLink": "midudev",
+    "midudevHref": "https://midu.dev/",
+    "links": {
+      "sobreMi": "About me",
+      "contacto": "Contact",
+      "contactoHref": "mailto:cmrcurubo@gmail.com"
+    }
+  },
+  "aboutMe": {
+    "personalImageAlt": "Christian Mauricio Rodríguez Curubo",
+    "paragraphs": [
+      "I'm **Christian Mauricio Rodríguez Curubo**, a **Systems and Computer Engineering** student at **Universidad Pontificia Bolivariana** (eighth semester) and **Junior Software Developer**. I did an exchange in **Computer Engineering** at the **University of Málaga**, Spain (Sept 2025 – Feb 2026), with Nvidia certifications in **Fundamentals of Accelerated Computing with CUDA C++** and **Fundamentals of Deep Learning**.",
+      "I have solid skills in **software development**, **web and mobile applications**, and I'm interested in contributing in programming, frontend and backend, **data analytics**, **quantum computing** and systems analysis. I'm recognized for my fast learning, good communication and teamwork, with motivation to grow in dynamic and collaborative environments.",
+      "I've participated in **Semana de Proyectos UPB** with **six projects** across different editions and in **Foro FIME II** with a presentation on traffic analysis using differential equations. At **Curaduría Urbana #1 de Bucaramanga** I developed and maintained CRUD functionality and optimized visual components and user experience with JavaScript, React and Bootstrap.",
+      "**Skills:** web/mobile development, OOP, databases, client-server and microservices architectures, data analytics, quantum computing and GPU processing. **Languages:** JavaScript, TypeScript, Java, Kotlin, Python, C++, Dart, SQL. **Frameworks & cloud:** React, Angular, Vue, Flutter, Tailwind, Bootstrap, Azure, GCP. **Data & AI:** Power BI, Qiskit, ML Kit, BERT, CUDA. **Spoken languages:** Spanish (native), English (B2)."
+    ]
+  },
+  "experience": {
+    "experience": [
+      {
+        "date": "June 2024 – December 2024",
+        "title": "Software Developer (Temporary)",
+        "company": "Curaduría Urbana #1 de Bucaramanga",
+        "description": "Development and maintenance of CRUD functionality, improving the efficiency of the information system. Optimization of visual components and user experience using JavaScript, React and Bootstrap. Support in improving internal processes through technology solutions.",
+        "link": "https://www.curaduria1bucaramanga.com/"
+      },
+      {
+        "date": "September 2025 – February 2026",
+        "title": "Computer Engineering | Software Engineering (Exchange)",
+        "company": "University of Málaga (UMA), Spain",
+        "description": "Academic exchange. Nvidia certifications: Fundamentals of Accelerated Computing with Modern CUDA C++, Fundamentals of Deep Learning.",
+        "link": "https://www.uma.es/"
+      },
+      {
+        "date": "July 2022 – Present (Eighth semester)",
+        "title": "Systems and Computer Engineering",
+        "company": "Universidad Pontificia Bolivariana (UPB), Bucaramanga",
+        "description": "Notable participation in Semana de Proyectos UPB with six projects across different editions. Virtual presentation at Foro FIME II on traffic analysis using differential equations.",
+        "link": "https://github.com/ChisCurubo"
+      }
+    ]
+  },
+  "experienceItem": {
+    "saberMas": "Learn more"
+  },
+  "formacionAdicional": {
+    "items": [
+      { "provider": "Nvidia", "description": "Fundamentals of Accelerated Computing with Modern CUDA C++, Fundamentals of Deep Learning" },
+      { "provider": "Google Cloud Skills Boost", "description": "" },
+      { "provider": "Santander Open Academy", "description": "Introduction to Generative AI, SEO and content marketing" },
+      { "provider": "LVMH", "description": "Creation & Branding, Operations & Supply Chain" }
+    ]
+  },
+  "projects": {
+    "imageAlt": "No image",
+    "buttons": {
+      "code": "Code",
+      "preview": "Preview"
+    },
+    "projects": [
+      {
+        "title": "Tongi – Multilingual translation app",
+        "description": "Multilingual translation application (voice, text, camera) with a microservices architecture, integrating AI on Azure and Google ML Kit for offline support.",
+        "link": "https://docs.google.com/presentation/d/1STZBWEtxlCUBOeilznSY-czKDoJxmHW_/edit?usp=sharing&ouid=116899723769016775702&rtpof=true&sd=true",
+        "github": "https://github.com/Bounsic-A-S/Tongi.git",
+        "image": "/portfolio-dev/tongi.jpg",
+        "tags": ["FLUTTER", "PYTHON", "AZURE", "AI", "ADOBE_ILLUSTRATOR", "MLKIT"]
+      },
+      {
+        "title": "Bounsic – Music streaming platform",
+        "description": "Web music streaming platform hosted on Azure, with recommendation algorithms using scraping, crawling, Fourier transform and natural language processing with BERT.",
+        "link": "https://www.youtube.com/watch?v=EWtBTfPVWO8&ab_channel=JuanDavidPati%C3%B1oParra",
+        "github": "https://github.com/Bounsic-A-S/Bounsic-dev.git",
+        "image": "/portfolio-dev/BounsicImg.png",
+        "tags": ["TAILWIND", "TYPESCRIPT", "ADOBE_XD", "ADOBE_ILLUSTRATOR", "ANGULAR", "MONGODB", "AZURE", "SQL", "PYTHON"]
+      },
+      {
+        "title": "IPS Salud Pro / Vitamed IPS – ERP/CRM web system",
+        "description": "Design and implementation of an ERP/CRM-style web system with appointment management, roles and CRUD operations.",
+        "link": "https://www.canva.com/design/DAGUSzaKFd8/CJ2J17d_-8LieQOtio39vg/edit?utm_content=DAGUSzaKFd8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+        "github": "https://github.com/Jerdirlson/ProyectoIntegrador.git",
+        "image": "/portfolio-dev/Vitamed.png",
+        "tags": ["TAILWIND", "TYPESCRIPT", "JAVASCRIPT", "SQL", "ADOBE_XD", "ADOBE_ILLUSTRATOR", "VUE", "NODE"]
+      },
+      {
+        "title": "IPS Salud Pro – Web system",
+        "description": "Web system with medical appointment management, user and role CRUD. Academic project for Software Engineering.",
+        "link": "https://docs.google.com/presentation/d/1L4GeRIHJiAfsdmEDDHyTF7j3wewv0-IMueEPpY68Hj4/edit?usp=sharing",
+        "github": "https://github.com/Jerdirlson/Ing-Software-front.git",
+        "image": "/portfolio-dev/SlaudPro.png",
+        "tags": ["TAILWIND", "TYPESCRIPT", "SQL", "ADOBE_XD", "ADOBE_ILLUSTRATOR", "VUE", "NODE"]
+      },
+      {
+        "title": "Traffic analysis system",
+        "description": "Vehicle traffic simulation with SUMO and data analysis. Presented at Foro FIME II for the Differential Equations course.",
+        "link": "https://docs.google.com/presentation/d/1BGKNRbCUoPnNF7WizA7ibyJBCz97IirET-reAt8wDQU/edit?usp=sharing",
+        "github": "https://github.com/ChisCurubo/EcuacionesTrafico.git",
+        "image": "/portfolio-dev/Fime.png",
+        "tags": ["JAVA", "PYTHON", "SUMO"]
+      },
+      {
+        "title": "Whack a Frog (video game)",
+        "description": "Video game inspired by Whack-a-Mole, implemented in Java.",
+        "link": "https://docs.google.com/presentation/d/13xcyXtIwsuh2b1JakjcCIQ11EVqiHziz/edit?usp=sharing&ouid=116899723769016775702&rtpof=true&sd=true",
+        "github": "https://github.com/namekulero/WhackAFrog.git",
+        "image": "/portfolio-dev/WHACK.png",
+        "tags": ["JAVA", "ADOBE_ILLUSTRATOR"]
+      }
+    ]
+  },
+  "themeToggle": {
+    "themes": ["Light", "Dark", "System"],
+    "chooseThemeLabel": "Choose theme"
+  }
+}

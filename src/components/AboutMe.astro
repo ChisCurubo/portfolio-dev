@@ -1,26 +1,36 @@
 ---
-const personalImageAlt = "Christian Mauricio Rodríguez Curubo"
+import es from "../json/locales/es.json";
+import en from "../json/locales/en.json";
+
+interface Props {
+  lang?: "es" | "en";
+}
+
+const { lang = "es" } = Astro.props;
+const locale = lang === "en" ? en : es;
+const { personalImageAlt, paragraphs } = locale.aboutMe;
+
+function parseStrong(text: string) {
+  const parts = text.split(/\*\*(.*?)\*\*/g);
+  return parts.map((part, i) => (i % 2 === 1 ? { strong: true, text: part } : { strong: false, text: part }));
+}
 ---
 
 <article class="flex flex-col items-center justify-center gap-8 text-white-700 dark:text-white-300 md:flex-row">
   <div
     class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
   >
-    <p>
-      Me llamo Christian Mauricio Rodríguez Curubo. Actualmente soy estudiante de <strong>Ingeniería de Sistemas e Informática</strong> en la Universidad Pontificia Bolivariana, donde estoy en sexto semestre. Me apasiona el desarrollo de software, la inteligencia artificial y construir soluciones tecnológicas con impacto real.
-    </p>
-
-    <p>
-      He trabajado en proyectos como <strong>Bounsic</strong>, una plataforma musical alojada en Azure que incorpora <strong>scraping, transformada de Fourier y BERT</strong> para mejorar las recomendaciones de canciones. También desarrollé un <strong>sistema de gestión de citas y roles para IPS Salud Pro / Vitamed IPS</strong>, simulando funcionalidades tipo ERP y CRM.
-    </p>
-
-    <p>
-      En la <strong>Curaduría Urbana #1 de Bucaramanga</strong> contribuí al mantenimiento de sistemas informáticos, optimizando interfaces con tecnologías como JavaScript, React y Bootstrap. Me interesa especialmente cómo la experiencia de usuario y el backend pueden trabajar juntos para ofrecer productos más eficientes.
-    </p>
-
-    <p>
-      He participado en eventos como el <strong>Foro FIME II</strong> con una ponencia sobre análisis de tráfico vehicular usando SUMO, y he presentado <strong>cuatro proyectos en distintas ediciones de la Semana de Proyectos UPB</strong>. Me entusiasma seguir creciendo como profesional, siempre combinando <strong>tecnología, análisis de datos y soluciones creativas</strong>.
-    </p>
+    {
+      paragraphs.map((paragraph) => (
+        <p>
+          {
+            parseStrong(paragraph).map((segment) =>
+              segment.strong ? <strong>{segment.text}</strong> : segment.text
+            )
+          }
+        </p>
+      ))
+    }
   </div>
 
   <img width="200" height="200" src="/portfolio-dev/ImagenChris.jpg" alt={personalImageAlt} class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20 " style="object-position: 50% 50%">

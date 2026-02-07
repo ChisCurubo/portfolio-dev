@@ -1,5 +1,17 @@
 ---
-const currentYear = new Date().getFullYear()
+import es from "../json/locales/es.json";
+import en from "../json/locales/en.json";
+
+interface Props {
+  lang: "es" | "en";
+  basePath: string;
+}
+
+const { lang, basePath } = Astro.props;
+const locale = lang === "en" ? en : es;
+const currentYear = new Date().getFullYear();
+const { copyrightPrefix, copyrightSuffix, midudevLink, midudevHref, links } = locale.footer;
+const sobreMiHref = "#about";
 ---
 
 <footer
@@ -9,19 +21,18 @@ const currentYear = new Date().getFullYear()
     class="rounded-lg w-full max-w-screen-xl mx-auto md:flex md:items-center md:justify-between py-4"
   >
     <span class="text-sm sm:text-center text-white/90 dark:text-white/90"
-      >© {currentYear}
-      <a href="https://midu.dev/" class="hover:underline">midudev</a>. Casi
-      todos los derechos reservados
+      >{copyrightPrefix} {currentYear}
+      <a href={midudevHref} class="hover:underline">{midudevLink}</a>. {copyrightSuffix}
     </span>
     <ul
       class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0"
     >
       <li>
-        <a href="/#sobre-mi" class="hover:underline me-4 md:me-6">Sobre mí</a>
+        <a href={sobreMiHref} class="hover:underline me-4 md:me-6">{links.sobreMi}</a>
       </li>
       <li>
-        <a id="contacto" href="mailto:cmrcurubo@gmail.com" class="hover:underline"
-          >Contacto</a
+        <a id="contacto" href={links.contactoHref} class="hover:underline"
+          >{links.contacto}</a
         >
       </li>
     </ul>

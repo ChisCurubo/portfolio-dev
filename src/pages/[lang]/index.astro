@@ -1,0 +1,119 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Badge from "../../components/Badge.astro";
+import Github from "../../components/icons/GitHub.astro";
+import LinkedIn from "../../components/icons/LinkedIn.astro";
+import SocialPill from "../../components/SocialPill.astro";
+import MailIcon from "../../components/icons/Mail.astro";
+import Experience from "../../components/Experience.astro";
+import SectionContainer from "../../components/SectionContainer.astro";
+import TitleSection from "../../components/TitleSection.astro";
+import Briefcase from "../../components/icons/Briefcase.astro";
+import CodeIcon from "../../components/icons/Code.astro";
+import Projects from "../../components/Projects.astro";
+import FormacionAdicional from "../../components/FormacionAdicional.astro";
+import ProfileCheck from "../../components/icons/ProfileCheck.astro";
+import AboutMe from "../../components/AboutMe.astro";
+
+import es from "../../json/locales/es.json";
+import en from "../../json/locales/en.json";
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: "es" } },
+    { params: { lang: "en" } },
+  ];
+}
+
+const { lang } = Astro.params;
+const locale = lang === "en" ? en : es;
+const t = locale;
+const basePath = `${import.meta.env.BASE_URL}${lang}`;
+---
+
+<Layout
+  lang={lang as "es" | "en"}
+  title={t.home.title}
+  description={t.home.description}
+  basePath={basePath}
+>
+  <main class="px-4">
+    <SectionContainer class="py-44">
+      <div class="flex gap-4 mb-4">
+        <img
+          class="rounded-full h-16 w-16 mb-4"
+          src="/portfolio-dev/ImagenChris.jpg"
+          alt={t.home.photoAlt}
+        />
+
+        <a
+          href="https://www.linkedin.com/in/christian-rodriguez-75501a2a6/"
+          target="_blank"
+          rel="noopener"
+          class="flex items-center transition md:justify-center md:hover:scale-105"
+        >
+          <Badge>{t.home.badge}</Badge>
+        </a>
+      </div>
+
+      <h1
+        class="text-white text-3xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+      >
+        {t.home.greeting}
+      </h1>
+      <h2 class="lg:text-xl opacity-80 text-wrap max-w-[800px] text-white">
+        {t.home.subtitle}
+        <span class="text-yellow-400/60 opacity-80">{t.home.subtitleLocation}</span>
+        {t.home.subtitleRest}
+      </h2>
+      <nav class="flex flex-wrap gap-4 mt-8">
+        <SocialPill href={`tel:${t.home.phone}`}>
+          {t.home.phoneLabel}: {t.home.phone}
+        </SocialPill>
+        <SocialPill href="mailto:cmrcurubo@gmail.com">
+          <MailIcon class="size-4" />
+          cmrcurubo@gmail.com
+        </SocialPill>
+        <SocialPill href="https://linkedin.com/in/christian-rodriguez-75501a2a6">
+          <LinkedIn class="size-4" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/ChisCurubo">
+          <Github class="size-4" />
+          GitHub
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+    <SectionContainer id="exp">
+      <TitleSection>
+        <Briefcase class="size-8" />
+        {t.home.sectionExperience}
+      </TitleSection>
+      <Experience lang={lang as "es" | "en"} />
+    </SectionContainer>
+
+    <SectionContainer class="py-24" id="projects">
+      <TitleSection>
+        <CodeIcon class="size-8" />
+        {t.home.sectionProjects}
+      </TitleSection>
+      <Projects lang={lang as "es" | "en"} />
+    </SectionContainer>
+
+    <SectionContainer class="py-24" id="formacion">
+      <TitleSection>
+        <CodeIcon class="size-8" />
+        {t.home.sectionFormacion}
+      </TitleSection>
+      <FormacionAdicional lang={lang as "es" | "en"} />
+    </SectionContainer>
+
+    <SectionContainer class="py-24" id="about">
+      <TitleSection>
+        <ProfileCheck class="size-8" />
+        {t.home.sectionAbout}
+      </TitleSection>
+      <AboutMe lang={lang as "es" | "en"} />
+    </SectionContainer>
+  </main>
+</Layout>

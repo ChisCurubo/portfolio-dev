@@ -1,0 +1,18 @@
+{
+  "experience": [
+    {
+      "date": "Junio 2024 - Diciembre 2024",
+      "title": "Desarrollador de Software (Temporal)",
+      "company": "Curaduría Urbana #1 de Bucaramanga",
+      "description": "Participé en el desarrollo y mantenimiento del sistema interno, implementando funcionalidades CRUD y optimizando procesos clave. Mejoré componentes visuales y la experiencia de usuario como parte de una colaboración técnica para modernizar las herramientas digitales de la entidad.",
+      "link": "https://www.curaduria1bucaramanga.com/"
+    },
+    {
+      "date": "Julio 2022 - Diciembre 2026",
+      "title": "Estudiante de Ingeniería de Software",
+      "company": "Universidad Pontificia Bolivariana",
+      "description": "Estudiante de Ingeniería de Software en la Universidad Pontificia Bolivariana, seccional Bucaramanga, enfocado en el desarrollo de soluciones tecnológicas, desde aplicaciones web hasta sistemas integrados. Formación centrada en programación, arquitectura de software, bases de datos y metodologías ágiles.",
+      "link": "https://github.com/ChisCurubo"
+    }
+  ]
+}
