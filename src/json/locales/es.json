@@ -93,7 +93,7 @@
         "description": "Aplicación de traducción multilenguaje (voz, texto, cámara) bajo arquitectura de microservicios, integrando IA en Azure y Google ML Kit para soporte offline.",
         "link": "https://docs.google.com/presentation/d/1STZBWEtxlCUBOeilznSY-czKDoJxmHW_/edit?usp=sharing&ouid=116899723769016775702&rtpof=true&sd=true",
         "github": "https://github.com/Bounsic-A-S/Tongi.git",
-        "image": "/portfolio-dev/tongi.jpg",
+        "image": "/portfolio-dev/tongiAdaptiveIcon.png",
         "tags": ["FLUTTER", "PYTHON", "AZURE", "AI", "ADOBE_ILLUSTRATOR", "MLKIT"]
       },
       {
