@@ -122,7 +122,7 @@
       },
       {
         "title": "Sistema de análisis de tráfico",
-        "description": "Simulación de tráfico vehicular con SUMO y análisis de datos. Presentado en el Foro FIME II para la asignatura Ecuaciones Diferenciales.",
+        "description": "Simulación de tráfico vehicular con SUMO y análisis de datos. Presentado en el Foro FIME II para la asignatura Ecuaciones Diferenciales. Para el Instituto Tecnologico Nacional de Mexico (ITNM)",
         "link": "https://docs.google.com/presentation/d/1BGKNRbCUoPnNF7WizA7ibyJBCz97IirET-reAt8wDQU/edit?usp=sharing",
         "github": "https://github.com/ChisCurubo/EcuacionesTrafico.git",
         "image": "/portfolio-dev/Fime.png",
