@@ -31,7 +31,7 @@
     "midudevLink": "midudev",
     "midudevHref": "https://midu.dev/",
     "links": {
-      "sobreMi": "About me",
+      "sobreMi": "#about",
       "contacto": "Contact",
       "contactoHref": "mailto:cmrcurubo@gmail.com"
     }
@@ -65,7 +65,7 @@
         "date": "July 2022 – Present (Eighth semester)",
         "title": "Systems and Computer Engineering",
         "company": "Universidad Pontificia Bolivariana (UPB), Bucaramanga",
-        "description": "Notable participation in Semana de Proyectos UPB with six projects across different editions. Virtual presentation at Foro FIME II on traffic analysis using differential equations.",
+        "description": "Notable participation in Semana de Proyectos UPB with six projects across different editions. Virtual presentation at Foro FIME II on traffic analysis using differential equations. For the Instituto Tecnologico Nacional de Mexico (ITNM)",
         "link": "https://github.com/ChisCurubo"
       }
     ]
