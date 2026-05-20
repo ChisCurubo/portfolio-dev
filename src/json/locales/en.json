@@ -39,10 +39,10 @@
   "aboutMe": {
     "personalImageAlt": "Christian Mauricio Rodríguez Curubo",
     "paragraphs": [
-      "I'm **Christian Mauricio Rodríguez Curubo**, a **Systems and Computer Engineering** student at **Universidad Pontificia Bolivariana** (eighth semester) and **Junior Software Developer**. I did an exchange in **Computer Engineering** at the **University of Málaga**, Spain (Sept 2025 – Feb 2026), with Nvidia certifications in **Fundamentals of Accelerated Computing with CUDA C++** and **Fundamentals of Deep Learning**.",
-      "I have solid skills in **software development**, **web and mobile applications**, and I'm interested in contributing in programming, frontend and backend, **data analytics**, **quantum computing** and systems analysis. I'm recognized for my fast learning, good communication and teamwork, with motivation to grow in dynamic and collaborative environments.",
-      "I've participated in **Semana de Proyectos UPB** with **six projects** across different editions and in **Foro FIME II** with a presentation on traffic analysis using differential equations. At **Curaduría Urbana #1 de Bucaramanga** I developed and maintained CRUD functionality and optimized visual components and user experience with JavaScript, React and Bootstrap.",
-      "**Skills:** web/mobile development, OOP, databases, client-server and microservices architectures, data analytics, quantum computing and GPU processing. **Languages:** JavaScript, TypeScript, Java, Kotlin, Python, C++, Dart, SQL. **Frameworks & cloud:** React, Angular, Vue, Flutter, Tailwind, Bootstrap, Azure, GCP. **Data & AI:** Power BI, Qiskit, ML Kit, BERT, CUDA. **Spoken languages:** Spanish (native), English (B2)."
+      "I'm **Christian Mauricio Rodríguez Curubo**, a last-semester **Systems and Informatics Engineering** student at **Universidad Pontificia Bolivariana** and **Software Developer**. I did an exchange in **Computer Engineering / Software Engineering** at the **University of Málaga**, Spain (Sept 2025 – Feb 2026), with Nvidia certifications in **Fundamentals of Accelerated Computing with CUDA C++** and **Fundamentals of Deep Learning**.",
+      "I have solid skills in **software development**, **web and mobile applications**, **distributed systems**, databases, and quantum computing. I'm interested in contributing in full-stack programming, microservices architectures, data analytics, and system design. I'm recognized for my fast learning capacity, excellent communication, and teamwork, with genuine motivation to grow in dynamic and collaborative environments.",
+      "I've participated in **Semana de Proyectos UPB** with six projects across different editions and presented virtually at **Foro FIME II** (National Technological Institute of Mexico) on vehicular traffic analysis using differential equations. At **Curaduría Urbana #1 de Bucaramanga**, I developed and maintained CRUD functionalities on institutional information systems, improving operational efficiency and optimizing visual components with JavaScript, React, and Bootstrap.",
+      "**Skills:** web/mobile development, OOP, databases, distributed systems and microservices, data analytics, quantum computing, and GPU processing. **Languages:** JavaScript, TypeScript, Java, Go, Kotlin, Python, C++, Dart, SQL. **Frameworks & cloud:** React, Angular, Vue, Flutter, Tailwind CSS, Bootstrap, Azure, GCP. **Data & AI:** Power BI, Qiskit, ML Kit, BERT, CUDA. **Spoken languages:** Spanish (Native), English (B2 Upper-Intermediate)."
     ]
   },
   "experience": {
@@ -127,6 +127,14 @@
         "github": "https://github.com/ChisCurubo/EcuacionesTrafico.git",
         "image": "/portfolio-dev/Fime.png",
         "tags": ["JAVA", "PYTHON", "SUMO"]
+      },
+      {
+        "title": "Enfok – Mobile and Web App",
+        "description": "Image processing application under distributed architecture with parallel processing and storage using MinIO; inter-service communication via gRPC and SOAP API.",
+        "link": "https://canva.link/g1sfbiwq5fr43vl",
+        "github": "https://github.com/orgs/DistribuidosN/repositories",
+        "image": "/portfolio-dev/Enfok.png",
+        "tags": ["GO", "JAVA", "POSTGRESQL", "GRPC", "MINIO"]
       },
       {
         "title": "Whack a Frog (video game)",

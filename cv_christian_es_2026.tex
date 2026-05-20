@@ -1,0 +1,189 @@
+\documentclass[10pt, letterpaper]{article}
+
+% ─── PACKAGES ────────────────────────────────────────────────────────────────
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.8cm, right=1.8cm, top=1.4cm, bottom=1.4cm]{geometry}
+\usepackage{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{microtype}
+\usepackage{parskip}
+
+% ─── COLORS ──────────────────────────────────────────────────────────────────
+\definecolor{accent}{HTML}{1A5276}
+\definecolor{lightaccent}{HTML}{2E86C1}
+\definecolor{darkgray}{HTML}{2C3E50}
+\definecolor{midgray}{HTML}{566573}
+\definecolor{lightgray}{HTML}{AEB6BF}
+
+% ─── HYPERREF ────────────────────────────────────────────────────────────────
+\hypersetup{colorlinks=true, urlcolor=lightaccent, linkcolor=lightaccent}
+
+% ─── SECTION FORMAT ──────────────────────────────────────────────────────────
+\titleformat{\section}
+    {\color{accent}\bfseries\normalsize}
+    {}
+    {0em}
+    {\MakeUppercase}
+    [{\color{accent}\titlerule}]
+\titlespacing{\section}{0pt}{5pt}{3pt}
+
+% ─── CUSTOM COMMANDS ─────────────────────────────────────────────────────────
+\newcommand{\entryhead}[4]{%
+    \noindent
+    {\bfseries\color{darkgray}#1} \quad {\small\color{lightaccent}#2} \hfill \textcolor{midgray}{\small #4}\\[1pt]
+    {\small\itshape\color{midgray}#3}\par
+    \vspace{2pt}%
+}
+
+% ─── LISTS ───────────────────────────────────────────────────────────────────
+\setlist[itemize]{
+    leftmargin=1.2em,
+    topsep=1pt,
+    itemsep=0pt,
+    parsep=0pt,
+    label=\textcolor{lightaccent}{\textbullet}
+}
+
+\pagestyle{empty}
+\parskip=1pt
+
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{document}
+% ═════════════════════════════════════════════════════════════════════════════
+
+% ─── HEADER ──────────────────────────────────────────────────────────────────
+\begin{center}
+    {\Huge\bfseries\color{darkgray} Christian Mauricio Rodr\'iguez Curubo}\\[4pt]
+    {\large\color{lightaccent} Ingenier\'ia de Sistemas e Inform\'atica \ $\cdot$ \ Desarrollador de Software}\\[5pt]
+    \color{midgray}\small
+    +57 301 525 3675 \quad
+    $\bullet$ \quad \href{mailto:cmrcurubo@gmail.com}{cmrcurubo@gmail.com} \quad
+    $\bullet$ \quad \href{https://www.linkedin.com/in/christian-mauricio-rodriguez-curubo-75501a2a6/}{LinkedIn} \quad
+    $\bullet$ \quad \href{https://github.com/ChisCurubo}{GitHub} \quad
+    $\bullet$ \quad \href{https://chiscurubo.github.io/portfolio-dev/es/}{Portfolio}
+\end{center}
+{\color{lightgray}\hrule}
+\vspace{2pt}
+
+% ─── PERFIL PROFESIONAL ──────────────────────────────────────────────────────
+\section{Perfil Profesional}
+
+\color{darkgray}
+Estudiante de \'ultimo semestre de Ingenier\'ia de Sistemas e Inform\'atica (promedio 4.62\,/\,5.0),
+con s\'olidos conocimientos en desarrollo de software, aplicaciones web y m\'oviles, sistemas distribuidos,
+bases de datos y computaci\'on cu\'antica. Interesado en aportar habilidades en programaci\'on full-stack,
+arquitecturas de microservicios, anal\'itica de datos y dise\~no de sistemas en un entorno de nivel
+inicial-intermedio, con el fin de adquirir experiencia pr\'actica en el dise\~no, implementaci\'on y
+optimizaci\'on de soluciones tecnol\'ogicas. Reconocido por su r\'apida capacidad de aprendizaje,
+excelente comunicaci\'on, liderazgo proactivo y trabajo en equipo; con motivaci\'on genuina por crecer
+profesionalmente en entornos din\'amicos y colaborativos donde la disciplina, la responsabilidad y
+el compromiso marcan la diferencia.
+\color{black}
+
+% ─── EDUCACIÓN ───────────────────────────────────────────────────────────────
+\section{Educaci\'on}
+
+\entryhead{Universidad Pontificia Bolivariana (UPB)}{Bucaramanga, Colombia}%
+{Ingenier\'ia de Sistemas e Inform\'atica \textemdash{} \'Ultimo semestre \quad \textbf{\color{accent}Promedio: 4.62\,/\,5.0}}{2022\,--\,Presente}
+\begin{itemize}\small
+    \item Participaci\'on destacada en la Semana de Proyectos UPB con seis proyectos en distintas ediciones.
+    \item Ponencia virtual en el Foro FIME II del Instituto Tecnol\'ogico Nacional de M\'exico sobre an\'alisis de tr\'afico vehicular mediante ecuaciones diferenciales.
+\end{itemize}
+
+\vspace{3pt}
+\entryhead{Universidad de M\'alaga (UMA)}{M\'alaga, Espa\~na}%
+{Ingenier\'ia Inform\'atica\,/\,Ingenier\'ia de Software \textemdash{} Semestre de intercambio}{Sep 2025\,--\,Feb 2026}
+\begin{itemize}\small
+    \item Certificaciones NVIDIA obtenidas durante el intercambio: \textit{Fundamentals of Accelerated Computing with CUDA C++} y \textit{Fundamentals of Deep Learning}.
+\end{itemize}
+
+\vspace{3pt}
+\entryhead{Colegio Biling\"ue Divino Ni\~no}{Bucaramanga, Colombia}{Bachiller Acad\'emico Biling\"ue}{2021}
+
+% ─── EXPERIENCIA ─────────────────────────────────────────────────────────────
+\section{Experiencia}
+
+\entryhead{Desarrollador de Software}{Curator\'ia Urbana \#1 de Bucaramanga}{Trabajo temporal}{Jun 2024\,--\,Dic 2024}
+\begin{itemize}\small
+    \item Desarrollo y mantenimiento de funcionalidades CRUD sobre sistemas de informaci\'on institucional, mejorando la eficiencia operativa y la trazabilidad de procesos internos.
+    \item Optimizaci\'on de componentes visuales y experiencia de usuario con \textbf{JavaScript}, \textbf{React} y \textbf{Bootstrap}; integraci\'on y consulta eficiente con bases de datos relacionales.
+    \item Soporte t\'ecnico continuo y propuesta de mejoras tecnol\'ogicas en entorno de entidad p\'ublica, demostrando responsabilidad y compromiso con los plazos establecidos.
+\end{itemize}\normalsize
+
+% ─── PROYECTOS ───────────────────────────────────────────────────────────────
+\section{Proyectos Acad\'emicos Destacados}
+
+\small
+\noindent\textbf{\color{darkgray}Enfok} \textcolor{midgray}{(Aplicativo M\'ovil y Web):}
+\textcolor{midgray}{Aplicaci\'on para el procesamiento de im\'agenes bajo arquitectura distribuida con procesamiento en paralelo y almacenamiento con MinIO; comunicaci\'on inter-servicio v\'ia gRPC y API SOAP. Stack: Go, Java, PostgreSQL.}
+
+\smallskip
+\noindent\textbf{\color{darkgray}Tongi} \textcolor{midgray}{(Aplicativo M\'ovil):}
+\textcolor{midgray}{Aplicaci\'on de traducci\'on multilenguaje (voz, texto, c\'amara) bajo arquitectura de microservicios, integrando IA en Azure y Google ML Kit para soporte offline.}
+
+\smallskip
+\noindent\textbf{\color{darkgray}Bounsic} \textcolor{midgray}{(Sistema Web):}
+\textcolor{midgray}{Plataforma web de reproducci\'on musical alojada en Azure, incorporando algoritmos de recomendaci\'on mediante t\'ecnicas de scraping, crawling, Transformada de Fourier y procesamiento de lenguaje natural con BERT.}
+
+\smallskip
+\noindent\textbf{\color{darkgray}IPS Salud Pro\,/\,Vitamed IPS} \textcolor{midgray}{(Sistema Web):}
+\textcolor{midgray}{Dise\~no e implementaci\'on de un sistema web tipo ERP/CRM con gesti\'on de citas, roles y operaciones CRUD.}
+
+\smallskip
+\noindent\textbf{\color{darkgray}Sistema de An\'alisis de Tr\'afico:}
+\textcolor{midgray}{Simulaci\'on de tr\'afico vehicular utilizando SUMO y an\'alisis de datos obtenidos. Proyecto presentado en el Foro FIME II para la asignatura Ecuaciones Diferenciales.}
+\normalsize
+
+% ─── COMPETENCIAS ────────────────────────────────────────────────────────────
+\section{Competencias T\'ecnicas}
+
+{\small
+\noindent\textbf{\color{darkgray}Competencias Generales:}
+\textcolor{midgray}{Desarrollo de software y aplicaciones web/m\'oviles, programaci\'on orientada a objetos, bases de datos, arquitecturas cliente-servidor, microservicios y \textbf{sistemas distribuidos}, anal\'itica de datos, computaci\'on cu\'antica y procesamiento con GPU.}
+
+\noindent\textbf{\color{darkgray}Lenguajes:}
+\textcolor{midgray}{JavaScript, TypeScript, Java, \textbf{Go}, Kotlin, Python, C++, Dart, SQL.}
+
+\noindent\textbf{\color{darkgray}Frameworks \& Cloud:}
+\textcolor{midgray}{React, Angular, Vue, Flutter, Tailwind CSS, Bootstrap, Azure, GCP.}
+
+\noindent\textbf{\color{darkgray}Bases de Datos:}
+\textcolor{midgray}{\textbf{Oracle Database} (PL/SQL), \textbf{PostgreSQL}, MySQL, MongoDB.}
+
+\noindent\textbf{\color{darkgray}Integraci\'on \& Protocolos:}
+\textcolor{midgray}{REST, \textbf{gRPC}, \textbf{API SOAP}, tolerancia a fallos, escalabilidad horizontal.}
+
+\noindent\textbf{\color{darkgray}Almacenamiento \& Infraestructura:}
+\textcolor{midgray}{\textbf{MinIO} (object storage), nociones de infraestructura f\'isica (redes, servidores, entornos on-premise y cloud).}
+
+\noindent\textbf{\color{darkgray}Data \& IA:}
+\textcolor{midgray}{Power BI, Qiskit, ML Kit, BERT/NLP, CUDA.}
+
+\noindent\textbf{\color{darkgray}Idiomas:}
+\textbf{\color{lightaccent}Espa\~nol: Nativo} \ $\cdot$ \ \textbf{\color{lightaccent}Ingl\'es: B2 Upper-Intermediate.}
+}
+
+% ─── FORMACIÓN ADICIONAL ─────────────────────────────────────────────────────
+\section{Formaci\'on Adicional y Certificaciones}
+
+\begin{multicols}{2}
+\small
+\begin{itemize}
+    \item \textbf{NVIDIA} \textemdash{} Fundamentals of Accelerated Computing with CUDA C++
+    \item \textbf{NVIDIA} \textemdash{} Fundamentals of Deep Learning
+    \item \textbf{Google Cloud} \textemdash{} Google Cloud Skills Boost
+    \item \textbf{Santander Open Academy} \textemdash{} Introducci\'on a la IA Generativa
+    \item \textbf{Santander Open Academy} \textemdash{} SEO y Content Marketing
+    \item \textbf{LVMH} \textemdash{} Creation \& Branding \ $\cdot$ \ Operations \& Supply Chain
+\end{itemize}
+\end{multicols}
+
+\end{document}

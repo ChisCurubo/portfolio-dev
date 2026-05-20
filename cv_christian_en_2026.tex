@@ -1,0 +1,181 @@
+\documentclass[10pt, letterpaper]{article}
+
+% ─── PACKAGES ────────────────────────────────────────────────────────────────
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.8cm, right=1.8cm, top=1.4cm, bottom=1.4cm]{geometry}
+\usepackage{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{microtype}
+\usepackage{parskip}
+
+% ─── COLORS ──────────────────────────────────────────────────────────────────
+\definecolor{accent}{HTML}{1A5276}
+\definecolor{lightaccent}{HTML}{2E86C1}
+\definecolor{darkgray}{HTML}{2C3E50}
+\definecolor{midgray}{HTML}{566573}
+\definecolor{lightgray}{HTML}{AEB6BF}
+
+% ─── HYPERREF ────────────────────────────────────────────────────────────────
+\hypersetup{colorlinks=true, urlcolor=lightaccent, linkcolor=lightaccent}
+
+% ─── SECTION FORMAT ──────────────────────────────────────────────────────────
+\titleformat{\section}
+    {\color{accent}\bfseries\normalsize}
+    {}
+    {0em}
+    {\MakeUppercase}
+    [{\color{accent}\titlerule}]
+\titlespacing{\section}{0pt}{5pt}{3pt}
+
+% ─── CUSTOM COMMANDS ─────────────────────────────────────────────────────────
+\newcommand{\entryhead}[4]{%
+    \noindent
+    {\bfseries\color{darkgray}#1} \quad {\small\color{lightaccent}#2} \hfill \textcolor{midgray}{\small #4}\\[1pt]
+    {\small\itshape\color{midgray}#3}\par
+    \vspace{2pt}%
+}
+
+% ─── LISTS ───────────────────────────────────────────────────────────────────
+\setlist[itemize]{
+    leftmargin=1.2em,
+    topsep=1pt,
+    itemsep=0pt,
+    parsep=0pt,
+    label=\textcolor{lightaccent}{\textbullet}
+}
+
+\pagestyle{empty}
+\parskip=1pt
+
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{document}
+% ═════════════════════════════════════════════════════════════════════════════
+
+% ─── HEADER ──────────────────────────────────────────────────────────────────
+\begin{center}
+    {\Huge\bfseries\color{darkgray} Christian Mauricio Rodr\'iguez Curubo}\\[4pt]
+    {\large\color{lightaccent} Systems and Informatics Engineering \ $\cdot$ \ Software Developer}\\[5pt]
+    \color{midgray}\small
+    +57 301 525 3675 \quad
+    $\bullet$ \quad \href{mailto:cmrcurubo@gmail.com}{cmrcurubo@gmail.com} \quad
+    $\bullet$ \quad \href{https://www.linkedin.com/in/christian-mauricio-rodriguez-curubo-75501a2a6/}{LinkedIn} \quad
+    $\bullet$ \quad \href{https://github.com/ChisCurubo}{GitHub} \quad
+    $\bullet$ \quad \href{https://chiscurubo.github.io/portfolio-dev/en/}{Portfolio}
+\end{center}
+{\color{lightgray}\hrule}
+\vspace{2pt}
+
+% ─── PROFESSIONAL PROFILE ────────────────────────────────────────────────────
+\section{Professional Profile}
+
+\color{darkgray}
+Last-semester Systems and Informatics Engineering student (GPA 4.62\,/\,5.0) with solid knowledge in software development, web and mobile applications, distributed systems, databases, and quantum computing. Interested in contributing skills in full-stack programming, microservices architectures, data analytics, and system design in an entry-to-intermediate level environment, aiming to acquire practical experience in the design, implementation, and optimization of technological solutions. Recognized for fast learning capacity, excellent communication, proactive leadership, and teamwork; genuinely motivated to grow professionally in dynamic and collaborative environments where discipline, responsibility, and commitment make a difference.
+\color{black}
+
+% ─── EDUCATION ───────────────────────────────────────────────────────────────
+\section{Education}
+
+\entryhead{Universidad Pontificia Bolivariana (UPB)}{Bucaramanga, Colombia}%
+{Systems and Informatics Engineering \textemdash{} Final semester \quad \textbf{\color{accent}GPA: 4.62\,/\,5.0}}{2022\,--\,Present}
+\begin{itemize}\small
+    \item Outstanding participation in the UPB Project Week with six projects in different editions.
+    \item Virtual presentation at the FIME II Forum of the National Technological Institute of Mexico on vehicular traffic analysis using differential equations.
+\end{itemize}
+
+\vspace{3pt}
+\entryhead{Universidad de M\'alaga (UMA)}{M\'alaga, Spain}%
+{Computer Engineering\,/\,Software Engineering \textemdash{} Exchange semester}{Sep 2025\,--\,Feb 2026}
+\begin{itemize}\small
+    \item NVIDIA certifications obtained during the exchange: \textit{Fundamentals of Accelerated Computing with CUDA C++} and \textit{Fundamentals of Deep Learning}.
+\end{itemize}
+
+\vspace{3pt}
+\entryhead{Colegio Biling\"ue Divino Ni\~no}{Bucaramanga, Colombia}{High School Diploma (Bilingual)}{2021}
+
+% ─── EXPERIENCE ──────────────────────────────────────────────────────────────
+\section{Experience}
+
+\entryhead{Software Developer}{Curadur\'ia Urbana \#1 de Bucaramanga}{Temporary Position}{Jun 2024\,--\,Dec 2024}
+\begin{itemize}\small
+    \item Development and maintenance of CRUD functionalities on institutional information systems, improving operational efficiency and traceability of internal processes.
+    \item Optimization of visual components and user experience with \textbf{JavaScript}, \textbf{React}, and \textbf{Bootstrap}; efficient integration and querying of relational databases.
+    \item Continuous technical support and proposal of technological improvements in a public entity environment, demonstrating responsibility and commitment to established deadlines.
+\end{itemize}\normalsize
+
+% ─── PROJECTS ────────────────────────────────────────────────────────────────
+\section{Notable Academic Projects}
+
+\small
+\noindent\textbf{\color{darkgray}Enfok} \textcolor{midgray}{(Mobile and Web App):}
+\textcolor{midgray}{Image processing application under distributed architecture with parallel processing and storage using MinIO; inter-service communication via gRPC and SOAP API. Stack: Go, Java, PostgreSQL.}
+
+\smallskip
+\noindent\textbf{\color{darkgray}Tongi} \textcolor{midgray}{(Mobile App):}
+\textcolor{midgray}{Multi-language translation application (voice, text, camera) under a microservices architecture, integrating AI in Azure and Google ML Kit for offline support.}
+
+\smallskip
+\noindent\textbf{\color{darkgray}Bounsic} \textcolor{midgray}{(Web System):}
+\textcolor{midgray}{Web music streaming platform hosted on Azure, incorporating recommendation algorithms using scraping, crawling, Fourier Transform, and natural language processing with BERT.}
+
+\smallskip
+\noindent\textbf{\color{darkgray}IPS Salud Pro\,/\,Vitamed IPS} \textcolor{midgray}{(Web System):}
+\textcolor{midgray}{Design and implementation of an ERP/CRM-type web system with appointment management, roles, and CRUD operations.}
+
+\smallskip
+\noindent\textbf{\color{darkgray}Traffic Analysis System:}
+\textcolor{midgray}{Vehicular traffic simulation using SUMO and analysis of obtained data. Project presented at the FIME II Forum for the Differential Equations course.}
+\normalsize
+
+% ─── SKILLS ──────────────────────────────────────────────────────────────────
+\section{Technical Skills}
+
+{\small
+\noindent\textbf{\color{darkgray}General Skills:}
+\textcolor{midgray}{Software and web/mobile app development, object-oriented programming, databases, client-server architectures, microservices and \textbf{distributed systems}, data analytics, quantum computing, and GPU processing.}
+
+\noindent\textbf{\color{darkgray}Languages:}
+\textcolor{midgray}{JavaScript, TypeScript, Java, \textbf{Go}, Kotlin, Python, C++, Dart, SQL.}
+
+\noindent\textbf{\color{darkgray}Frameworks \& Cloud:}
+\textcolor{midgray}{React, Angular, Vue, Flutter, Tailwind CSS, Bootstrap, Azure, GCP.}
+
+\noindent\textbf{\color{darkgray}Databases:}
+\textcolor{midgray}{\textbf{Oracle Database} (PL/SQL), \textbf{PostgreSQL}, MySQL, MongoDB.}
+
+\noindent\textbf{\color{darkgray}Integration \& Protocols:}
+\textcolor{midgray}{REST, \textbf{gRPC}, \textbf{SOAP API}, fault tolerance, horizontal scalability.}
+
+\noindent\textbf{\color{darkgray}Storage \& Infrastructure:}
+\textcolor{midgray}{\textbf{MinIO} (object storage), notions of physical infrastructure (networks, servers, on-premise and cloud environments).}
+
+\noindent\textbf{\color{darkgray}Data \& AI:}
+\textcolor{midgray}{Power BI, Qiskit, ML Kit, BERT/NLP, CUDA.}
+
+\noindent\textbf{\color{darkgray}Languages:}
+\textbf{\color{lightaccent}Spanish: Native} \ $\cdot$ \ \textbf{\color{lightaccent}English: B2 Upper-Intermediate.}
+}
+
+% ─── CERTIFICATIONS ──────────────────────────────────────────────────────────
+\section{Additional Training and Certifications}
+
+\begin{multicols}{2}
+\small
+\begin{itemize}
+    \item \textbf{NVIDIA} \textemdash{} Fundamentals of Accelerated Computing with CUDA C++
+    \item \textbf{NVIDIA} \textemdash{} Fundamentals of Deep Learning
+    \item \textbf{Google Cloud} \textemdash{} Google Cloud Skills Boost
+    \item \textbf{Santander Open Academy} \textemdash{} Introduction to Generative AI
+    \item \textbf{Santander Open Academy} \textemdash{} SEO and Content Marketing
+    \item \textbf{LVMH} \textemdash{} Creation \& Branding \ $\cdot$ \ Operations \& Supply Chain
+\end{itemize}
+\end{multicols}
+
+\end{document}

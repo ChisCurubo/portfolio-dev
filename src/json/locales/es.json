@@ -39,10 +39,10 @@
   "aboutMe": {
     "personalImageAlt": "Christian Mauricio Rodríguez Curubo",
     "paragraphs": [
-      "Soy **Christian Mauricio Rodríguez Curubo**, estudiante de **Ingeniería de Sistemas e Informática** en la **Universidad Pontificia Bolivariana** (octavo semestre) y **Desarrollador de Software (Junior)**. He realizado intercambio en **Ingeniería Informática** en la **Universidad de Málaga** (España, sept. 2025 – feb. 2026), con certificaciones Nvidia en **Fundamentals of Accelerated Computing with CUDA C++** y **Fundamentals of Deep Learning**.",
-      "Tengo sólidos conocimientos en **desarrollo de software**, **aplicaciones web y móviles**, y me interesa aportar en programación, frontend y backend, **analítica de datos**, **computación cuántica** y análisis de sistemas. Me reconocen mi rápida capacidad de aprendizaje, buena comunicación y trabajo en equipo, con motivación por crecer en entornos dinámicos y colaborativos.",
-      "He participado en la **Semana de Proyectos UPB** con **seis proyectos** en diversas ediciones y en el **Foro FIME II** con una ponencia sobre análisis de tráfico mediante ecuaciones diferenciales. En la **Curaduría Urbana #1 de Bucaramanga** desarrollé y mantuve funcionalidades CRUD y optimicé componentes visuales y experiencia de usuario con JavaScript, React y Bootstrap.",
-      "**Competencias:** desarrollo web/móvil, POO, bases de datos, arquitecturas cliente-servidor y microservicios, analítica de datos, computación cuántica y procesamiento con GPU. **Lenguajes:** JavaScript, TypeScript, Java, Kotlin, Python, C++, Dart, SQL. **Frameworks y cloud:** React, Angular, Vue, Flutter, Tailwind, Bootstrap, Azure, GCP. **Data e IA:** Power BI, Qiskit, ML Kit, BERT, CUDA. **Idiomas:** Español (nativo), Inglés (B2)."
+      "Soy **Christian Mauricio Rodríguez Curubo**, estudiante de último semestre de **Ingeniería de Sistemas e Informática** en la **Universidad Pontificia Bolivariana** y **Desarrollador de Software**. He realizado intercambio en **Ingeniería Informática / Ingeniería de Software** en la **Universidad de Málaga** (España, sept. 2025 – feb. 2026), con certificaciones Nvidia en **Fundamentals of Accelerated Computing with CUDA C++** y **Fundamentals of Deep Learning**.",
+      "Tengo sólidos conocimientos en **desarrollo de software**, **aplicaciones web y móviles**, **sistemas distribuidos**, bases de datos y computación cuántica. Me interesa aportar en programación full-stack, arquitecturas de microservicios, analítica de datos y diseño de sistemas. Me reconocen mi rápida capacidad de aprendizaje, buena comunicación y trabajo en equipo, con motivación por crecer en entornos dinámicos y colaborativos.",
+      "He participado en la **Semana de Proyectos UPB** con seis proyectos en diversas ediciones y presenté una ponencia virtual en el **Foro FIME II** del Instituto Tecnológico Nacional de México sobre análisis de tráfico vehicular mediante ecuaciones diferenciales. En la **Curaduría Urbana #1 de Bucaramanga** desarrollé y mantuve funcionalidades CRUD, mejorando la eficiencia operativa y optimizando componentes visuales con JavaScript, React y Bootstrap.",
+      "**Competencias:** desarrollo web/móvil, POO, bases de datos, sistemas distribuidos y microservicios, analítica de datos, computación cuántica y procesamiento con GPU. **Lenguajes:** JavaScript, TypeScript, Java, Go, Kotlin, Python, C++, Dart, SQL. **Frameworks y cloud:** React, Angular, Vue, Flutter, Tailwind, Bootstrap, Azure, GCP. **Data e IA:** Power BI, Qiskit, ML Kit, BERT, CUDA. **Idiomas:** Español (nativo), Inglés (B2 Upper-Intermediate)."
     ]
   },
   "experience": {
@@ -127,6 +127,14 @@
         "github": "https://github.com/ChisCurubo/EcuacionesTrafico.git",
         "image": "/portfolio-dev/Fime.png",
         "tags": ["JAVA", "PYTHON", "SUMO"]
+      },
+      {
+        "title": "Enfok – Aplicativo móvil y web",
+        "description": "Aplicación para el procesamiento de imágenes bajo arquitectura distribuida con procesamiento en paralelo y almacenamiento con MinIO; comunicación inter-servicio vía gRPC y API SOAP.",
+        "link": "https://canva.link/g1sfbiwq5fr43vl",
+        "github": "https://github.com/orgs/DistribuidosN/repositories",
+        "image": "/portfolio-dev/Enfok.png",
+        "tags": ["GO", "JAVA", "POSTGRESQL", "GRPC", "MINIO"]
       },
       {
         "title": "Whack a Frog (videojuego)",
